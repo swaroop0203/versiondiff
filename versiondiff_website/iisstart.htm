@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>MSW Octopus Deployment Server</title>
+<style type="text/css">
+<!--
+body {
+	color:#000000;
+	background-color:#FFFFFF;
+	margin:0;
+}
+
+#container {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	}
+
+a img {
+	border:none;
+}
+
+-->
+</style>
+</head>
+<body>
+<div id="container">
+<a href="http://mswdeploy.vistaprint.net/ods"><img src="iis-85.jpg" alt="Cthulhu" width="600" height="600" /><br>
+<font face="verdana" color="green" size=4>MSW Octopus Deployment Server</font><br>
+<font face="verdana" color="black" size=1>Click to continue</font><br></a>
+</div>
+<div id="diffContainer">
+    <!-- <button id='versiondiff-button'>Test Diff</button> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <!-- <script src='javascript/clientside.js'></script> -->
+    <!-- This works: <a href='http://citwltufiods001.vistaprint.net:1337/Versiondiff?versionA=33.7.51.0&versionB=33.6.180.0'>Version Diff</a> -->
+
+
+<!-- Makes a get request to nodejs server on another port. -->
+<form action="http://citwltufiods001.vistaprint.net:1337/Versiondiff" method="get">
+  Version A: 
+  <input type="text" name="versionA"><br>
+  Version B:
+  <input type="text" name="versionB"><br>
+  <input type="submit" value="Get Diff">
+</form>
+
+
+</div>
+</body>
+</html>
